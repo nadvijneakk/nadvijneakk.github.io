@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="randstuff.ru, rundstuff, генератор случайных чисел онлайн, генератор случайных чисел, случайные числа, случайное число, последовательность случайных чисел" />
+      <meta name="description" content="RandStuff.ru - генератор случайных чисел онлайн" />
+      <title>RandStuff.ru - генератор случайных чисел онлайн</title>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>
+        window.jQuery || document.write('<script src="jquery-1.11.3.min.js">\x3C/script>')
+      </script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+      <script>
+        window.jQuery.ui || document.write('<script src="jquery-ui-1.11.4.min.js">\x3C/script>')
+      </script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+      <!--[if lt IE 9]><script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
+      <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic&subset=cyrillic-ext" />
+      <link type="text/css" rel="stylesheet" href="normalize.css" />
+      <link type="text/css" rel="stylesheet" href="font-awesome.css" />
+      <link type="text/css" rel="stylesheet" href="colorbox.css" />
+      <link type="text/css" rel="stylesheet" href="site.css" />
+   </head>
+   <body>
+      <div id="wrapper">
+         <div id="header">
+            <div class="content">
+               <div class="logo"><a href="/"></a></div>
+            </div>
+         </div>
+         <div id="page">
+            <div class="content">
+               <div id="gads1"></div>
+               <h1 id="caption" data-txt="Случайное число:" data-mtxt="Случайные числа:">Случайное число:</h1>
+               <div id="number" class="single"><span class="cur">56</span></div>
+               <button id="button" class="number"></button>
+               <div id="description" class="number">
+                  новую последовательность из
+                  <div id="slider" data-min="1" data-max="50" data-val="1"></div>
+                  <span id="slider-val" data-words="случайного числа,случайных чисел,случайных чисел"></span>
+                  <div id="number-from">
+                     <label class="sel"><input type="radio" name="from" value="range" checked="checked" /><span>из диапазона</span></label> или <label><input type="radio" name="from" value="list" /><span>из списка</span></label><br />
+                     <ul>
+                        <li class="number-from-range sel">от<input id="number-start" type="text" maxlength="9" value="1" autocomplete="off" />до<input id="number-end" type="text" maxlength="9" value="100" autocomplete="off" /></li>
+                        <li class="number-from-list"><textarea id="number-list" maxlength="8388607" autocomplete="off"placeholder="укажите список целых чисел"></textarea></li>
+                     </ul>
+                  </div>
+                  <div id="number-unique"><label><input type="checkbox" /> исключить повторения</label></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="timepicker.js"></script>
+      <script src="datepicker-ru.js"></script>
+      <script src="colorbox.js"></script>
+      <script src="site.js"></script>
+   </body>
+</html>
